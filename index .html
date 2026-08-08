@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Vivek Tiwari — Credential Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">VT<span>.</span></div>
+  <div class="top-actions"><button id="shareBtn" class="pill ghost">Share</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-badge">● Available for opportunities · Guna, MP</div>
+  <h1><span class="serif">Vivek Tiwari</span><br/>Continuous Learner</h1>
+  <p class="sub">Psychology & Behavior explorer. Curating proof of work across AI, Finance & National Awareness. 7 verified credentials from 2020–2026.</p>
+  <div class="stats"><div><b>7</b><span>Credentials</span></div><div><b>5</b><span>Institutions</span></div><div><b>3</b><span>Pro Certs</span></div></div>
+  <div class="chips" id="filterChips"></div>
+</section>
+<section id="featured" class="section"><div class="section-head"><h2>Featured Credentials</h2><span class="line"></span></div><div id="featuredGrid" class="grid featured"></div></section>
+<section class="section"><div class="section-head"><h2>All Certificates</h2><span class="count" id="count"></span></div><div id="certGrid" class="grid"></div></section>
+<section class="section timeline-sec"><div class="section-head"><h2>Timeline</h2></div><div id="timeline" class="timeline"></div></section>
+<section class="section about"><h2>About Me</h2><p>I'm Vivek from Guna, MP — exploring human behavior, AI tools, and finance. This portfolio is my proof-of-learning: not just gallery images, but verified work that shows consistency from 2020 to now. Built mobile-first to share with recruiters, teachers and friends.</p><div class="skills"><span>Generative AI</span><span>ChatGPT</span><span>Finance Basics</span><span>Public Speaking</span><span>Yoga & Wellness</span><span>General Awareness</span></div></section>
+</main>
+<div id="viewer" class="viewer hidden">
+  <div class="viewer-bar"><button id="closeViewer" class="icon-btn">✕</button><div class="viewer-title"><b id="vTitle"></b><small id="vIssuer"></small></div><div class="navs"><button id="prevBtn" class="icon-btn">‹</button><button id="nextBtn" class="icon-btn">›</button></div></div>
+  <div class="viewer-body"><img id="vImg" alt="certificate" /><div class="vMeta"><div class="meta-row"><label>Organization</label><p id="vOrg"></p></div><div class="meta-row"><label>Description</label><p id="vDesc"></p></div><div class="meta-card"><label>What this proves</label><p id="vProof"></p></div><div class="meta-row"><label>Certificate ID</label><p class="mono" id="vId"></p></div></div></div>
+</div>
+<nav class="bottom-nav"><a href="#" data-scroll="top">Home</a><a href="#featured" data-scroll>Featured</a><a href="#certGrid" data-scroll>All</a><a href="#timeline" data-scroll>Timeline</a></nav>
+<script type="module" src="app.js"></script>
+</body>
+</html>
